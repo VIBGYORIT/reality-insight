@@ -1,21 +1,9 @@
 import streamlit as st
-import folium
-from folium.plugins import MarkerCluster
-import streamlit_folium as st_folium
-from geopy.geocoders import Nominatim
-import requests
 from streamlit_option_menu import option_menu
 import time
 from bs4 import BeautifulSoup
 import json
 
-
-# Set page config
-st.set_page_config(
-    page_title="RealScout Analytics",
-    page_icon="🏘️",
-    layout="wide"
-)
 
 # Initialize session state
 if 'map_data' not in st.session_state:
